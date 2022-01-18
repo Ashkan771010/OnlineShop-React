@@ -18,7 +18,7 @@ const ProductContainer = styled.div`
     margin-top: 50px;
     width: 100%;
     height: 560px;
-    background-color: #404040;
+    background-color: #fd7014;
     display: flex;
     justify-content: space-around;
     align-items: center;

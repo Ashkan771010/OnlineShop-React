@@ -49,13 +49,13 @@ const CartCardContainer = styled.div`
     align-items: center;
 
     .add-product {
-      color: blue;
+      color: #4a4aff;
       font-size: 25px;
       cursor: pointer;
     }
 
     .remove-product {
-      color: blue;
+      color: #f12020;
       font-size: 25px;
       cursor: pointer;
     }

@@ -15,7 +15,7 @@ const ProductSliderContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #404040;
+    background-color: #fd7014;
   }
 
   .swiper-button-next {
@@ -47,6 +47,15 @@ const ProductSliderContainer = styled.div`
     &:after {
       font-size: 28px;
       font-weight: 700;
+    }
+  }
+
+  @media(max-width: 710px) {
+    .swiper-button-next {
+      display: none;
+    }
+    .swiper-button-prev {
+      display: none;
     }
   }
 `;

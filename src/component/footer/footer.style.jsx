@@ -8,7 +8,7 @@ const FooterContainer = styled.footer`
   text-align: right;
   font: bold 16px IRANSansB;
   padding: 55px 50px;
-  margin-top: 110px;
+  margin-top: 160px;
   direction: rtl;
   /* position: absolute;
   bottom: 0; */
@@ -162,6 +162,10 @@ const FooterContainer = styled.footer`
 
     & .footer-icons {
       justify-content: center;
+    }
+
+    & .footer-right {
+      margin-right: 0;
     }
 
     & .footer-left,

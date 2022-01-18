@@ -16,6 +16,8 @@ const CartDetailContainer = styled.div`
   }
 
   .cart-title {
+    color: ${(props) => props.theme.text.color1};
+    transition: color 0.7s ease;
     margin-top: 115px;
     float: right;
     font-family: "IRANSansB";
@@ -27,6 +29,8 @@ const CartDetailContainer = styled.div`
     width: 417px;
     margin-top: 130px;
     margin-bottom: 40px;
+    color: ${(props) => props.theme.text.color1};
+    transition: color 0.7s ease;
     float: left;
     display: flex;
     justify-content: space-around;
@@ -43,8 +47,8 @@ const CartDetailContainer = styled.div`
     margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
-    background: lightgrey;
-    border: 2px solid lightgrey;
+    background: ${(props) => props.theme.bg.properyCard};
+    border: 2px solid ${(props) => props.theme.border.categoryCard};
     width: 80%;
     display: flex;
     justify-content: space-around;
@@ -56,9 +60,9 @@ const CartDetailContainer = styled.div`
 
     .continue-shoping {
       text-decoration: none;
-      background-color: ${(props) => props.theme.bg.properyCard};
+      background-color: #ff2626;
       transition: background 0.7s ease;
-      color: ${(props) => props.theme.text.spanColor};
+      color: white;
       transition: color 0.7s ease;
       border-radius: 5px;
       padding: 10px;

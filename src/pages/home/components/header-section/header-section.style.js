@@ -18,6 +18,20 @@ const HeaderSectionContainer = styled.div`
       border-radius: 12px;
     }
   }
+
+  @media (max-width: 760px) {
+    flex-wrap: wrap;
+    .header-banner {
+      width: 80%;
+      margin-top: 90px;
+
+      img {
+        &:last-of-type {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
 `;
 
-export { HeaderSectionContainer } ;
+export { HeaderSectionContainer };

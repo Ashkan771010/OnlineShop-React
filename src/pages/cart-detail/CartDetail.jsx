@@ -59,9 +59,6 @@ const CartDetail = () => {
             <img
               src={EmptyCart}
               alt="Empty Cart"
-              style={{
-                
-              }}
             />
           </div>
         )}

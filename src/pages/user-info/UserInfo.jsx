@@ -1,15 +1,29 @@
 import { UserInfoContainer } from "./user-info.style";
-import { useEffect } from "react";
+import { useEffect, useReducer } from "react";
 import ModalPopup from "../../component/modal/ModalPopup";
 import { useState } from "react";
 
+function reducer(state = "", action) {
+  switch (action.type) {
+    case "ON_CHANGE": {
+      const newValue = action.payload;
+      return newValue;
+    }
+    default: {
+      return state;
+    }
+  }
+}
+
 const UserInfo = () => {
   const [open, setIsOpen] = useState(false);
+  const [state, dispatch] = useReducer(reducer, "");
+  console.log(state);
 
   const handleOpenModal = (e) => {
     e.preventDefault();
-    setIsOpen(true)
-  }
+    setIsOpen(true);
+  };
 
   const handleCloseModal = () => {
     setIsOpen(false);
@@ -27,11 +41,25 @@ const UserInfo = () => {
           <div className="user-details">
             <div className="input-box">
               <span className="details">نام و نام خانوادگی</span>
-              <input type="text" placeholder="نام و نام خانوادگی" required />
+              <input
+                type="text"
+                placeholder="نام و نام خانوادگی"
+                required
+                onChange={(event) =>
+                  dispatch({ type: "ON_CHANGE", payload: event.target.value })
+                }
+              />
             </div>
             <div className="input-box">
               <span className="details">کد پستی</span>
-              <input type="number" placeholder="کد پستی" required />
+              <input
+                type="number"
+                placeholder="کد پستی"
+                required
+                onChange={(event) =>
+                  dispatch({ type: "ON_CHANGE", payload: event.target.value })
+                }
+              />
             </div>
             <div className="input-box">
               <span className="details">ایمیل</span>
@@ -39,6 +67,9 @@ const UserInfo = () => {
                 type="text"
                 placeholder="ایمیل خود را وارد کنید"
                 required
+                onChange={(event) =>
+                  dispatch({ type: "ON_CHANGE", payload: event.target.value })
+                }
               />
             </div>
             <div className="input-box">
@@ -47,6 +78,9 @@ const UserInfo = () => {
                 type="number"
                 placeholder="شماره موبایل خود را وارد کنید"
                 required
+                onChange={(event) =>
+                  dispatch({ type: "ON_CHANGE", payload: event.target.value })
+                }
               />
             </div>
             <div className="input-box adress" style={{ width: "100%" }}>
@@ -55,6 +89,9 @@ const UserInfo = () => {
                 type="text"
                 placeholder="آدرس کامل خود را وارد کنید"
                 required
+                onChange={(event) =>
+                  dispatch({ type: "ON_CHANGE", payload: event.target.value })
+                }
               />
             </div>
           </div>
@@ -79,11 +116,10 @@ const UserInfo = () => {
             </div>
           </div>
           <div className="button">
-            <button type="submit" onClick={handleOpenModal}>ثبت سفارش</button>
-            <ModalPopup
-              open={open}
-              handleCloseModal={handleCloseModal}
-            />
+            <button type="submit" onClick={state.length > 0 && handleOpenModal}>
+              ثبت سفارش
+            </button>
+            <ModalPopup open={open} handleCloseModal={handleCloseModal} />
           </div>
         </form>
       </div>

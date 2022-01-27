@@ -1,9 +1,9 @@
 import Box from "@mui/material/Box";
 import CheckCircleTwoToneIcon from "@mui/icons-material/CheckCircleTwoTone";
 import { StyledModal } from "./modal-popup.style";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import Backdrop from "@mui/material/Backdrop";
 import { removeAllProduct } from "../../redux/actions";
 
 const ModalPopup = (props) => {
@@ -17,7 +17,6 @@ const ModalPopup = (props) => {
   };
 
   const handleClosePop = (e) => {
-    e.preventDefault();
     navigate("/");
     dispatch(removeAllProduct());
   };
@@ -25,6 +24,11 @@ const ModalPopup = (props) => {
   const trackingCode = randomNumber(260, 55555);
   return (
     <>
+      <Backdrop
+        sx={{ color: "#FFF", zIndex: "99" }}
+        open={open}
+        onClick={handleClosePop}
+      />
       <StyledModal hideBackdrop open={open} onClose={handleCloseModal}>
         <Box className="lol">
           <CheckCircleTwoToneIcon className="success-icon" />

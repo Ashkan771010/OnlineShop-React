@@ -22,21 +22,19 @@ const Footer = () => {
             <a href="##">محصولات</a>
             <a href="##">ارتباط با ما</a>
           </p>
-
-          <p className="footer-company-name">webdevtrick &copy; 2019</p>
         </div>
 
         <div className="footer-center">
           <div className="address-container">
             <LocationOnIcon />
             <p>
-              <span>21 Revolution Street</span> Delhi, India
+              <span>خیابان بهشتی</span> تهران, ایران
             </p>
           </div>
 
           <div className="phone-container">
             <PhoneIcon />
-            <p>+1 555 123456</p>
+            <p>09196546346</p>
           </div>
 
           <div className="email-container">
@@ -51,9 +49,8 @@ const Footer = () => {
 
         <div className="footer-right">
           <p className="footer-company-about">
-            <span>About the company</span>
-            Web Dev Trick is a blog for web designers, graphic designers, web
-            developers &amp; SEO Learner.
+            <span>درباره کالا تاپ</span>
+            کالا تاپ یک شرکت فروشگاه اینترنتی مطمئن برای مشتریان است.
           </p>
 
           <div className="footer-icons">

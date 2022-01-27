@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/OnlineShop-React/static/css/main.9fe45567.css",
+    "main.js": "/OnlineShop-React/static/js/main.9142fff9.js",
+    "static/media/jwellery.png": "/OnlineShop-React/static/media/jwellery.b73edba53b8f1b4dd9b3.png",
+    "static/media/electronics.png": "/OnlineShop-React/static/media/electronics.1680e28147cb70d5fe09.png",
+    "static/media/wemon-cloth.png": "/OnlineShop-React/static/media/wemon-cloth.5ef3a80e948c95438060.png",
+    "static/media/BYekanBold.ttf": "/OnlineShop-React/static/media/BYekanBold.3e2154245604d626c3e0.ttf",
+    "static/media/men-cloth.png": "/OnlineShop-React/static/media/men-cloth.e1f7ddf08834c5752b50.png",
+    "static/media/BYekan.ttf": "/OnlineShop-React/static/media/BYekan.f26972c64b83c2aea5ca.ttf",
+    "static/media/IRANSans.ttf": "/OnlineShop-React/static/media/IRANSans.de82be9e22ea0b1e9238.ttf",
+    "static/media/IRANSansBold.ttf": "/OnlineShop-React/static/media/IRANSansBold.b260fbfa27f5820d44cc.ttf",
+    "static/media/Banner-2.jpg": "/OnlineShop-React/static/media/Banner-2.048f5f17bcc9e2c60b39.jpg",
+    "static/media/banner-1.jpg": "/OnlineShop-React/static/media/banner-1.52bb65ef3e8cf259a0c1.jpg",
+    "static/media/moon.png": "/OnlineShop-React/static/media/moon.3fe2513d44bb93bbcece.png",
+    "static/media/man2.png": "/OnlineShop-React/static/media/man2.693b9be10cde81e08032.png",
+    "static/media/sun.png": "/OnlineShop-React/static/media/sun.2abe7f979438061289b1.png",
+    "static/media/empty-cart.png": "/OnlineShop-React/static/media/empty-cart.72e00edc7adc1466c1a7.png",
+    "index.html": "/OnlineShop-React/index.html",
+    "main.9fe45567.css.map": "/OnlineShop-React/static/css/main.9fe45567.css.map",
+    "main.9142fff9.js.map": "/OnlineShop-React/static/js/main.9142fff9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9fe45567.css",
+    "static/js/main.9142fff9.js"
+  ]
+}
